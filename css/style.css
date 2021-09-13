@@ -57,12 +57,18 @@ body {
 }
 
 .single-product:hover {
-    box-shadow: 4px 4px 7px rgba(179, 178, 178, 0.712);
+    box-shadow: 4px 5px 11px rgb(179 178 178 / 79%);
+    cursor: pointer;
 }
 
 .product-image {
     width: 150px;
     height: 150px;
+    transition: all .6s;
+}
+
+.single-product:hover .product-image {
+    transform: skewX(1deg);
 }
 
 .cart {
