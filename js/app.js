@@ -53,7 +53,8 @@ const showDetails = (data) => {
      </div>`;
 
     document.getElementById("modal-footer").innerHTML =
-        `<button onclick="addToCart(${data.id},${data.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>`
+        ` <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Close</button>
+        <button onclick="addToCart(${data.id},${data.price})" id="addToCart-btn" class="buy-now btn btn-success">Place Order</button>`
 };
 
 let count = 0;
